@@ -17,5 +17,5 @@ M=D
 
 
 #### explicacion:
-cambie 60 y 9 y luego la direccion de salto a 0
+inicie A en 60 y lo iguale a D, luego cargue el registro 9 e A y sume A+D guardando en el resultado en D y mandandolo a la variable 6 ,luego volvi a A=0 y hice el salto 
 
