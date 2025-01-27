@@ -19,4 +19,4 @@ se encarga de la comunicación entre las partes del CPU y otros componentes del 
 #### MEMORIA:
 carga y guarda datos y instrucciones
 
-## punto 2
+https://lucid.app/lucidspark/b0a724c1-b334-4735-b2bd-ebaa8cd6e4d4/edit?viewport_loc=-1760%2C372%2C8059%2C3830%2C0_0&invitationId=inv_118d1c9d-a49f-4f29-9a4d-1585271e8889
