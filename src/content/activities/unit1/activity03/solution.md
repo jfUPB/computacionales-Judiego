@@ -19,5 +19,4 @@ se encarga de la comunicación entre las partes del CPU y otros componentes del 
 #### MEMORIA:
 carga y guarda datos y instrucciones
 
-
-
+## punto 2
