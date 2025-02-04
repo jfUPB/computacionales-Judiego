@@ -13,3 +13,8 @@ M=D carga el valor de la direccion de memoria que tenga el valor de A en D
 ## pregunta 3
 un puntero es una direccion de memoria almacenada en una varibale, osea es una direccion de memoria que su valor representa otra direccion de memoria 
 
+@100  // Carga la dirección 100 en A
+D=M   // D tiene el valor almacenado en la dirección 100 que es 200
+@D    // Carga la dirección almacenada en D (200) en A
+M=10  // Guarda el valor 10 en la dirección 200
+
