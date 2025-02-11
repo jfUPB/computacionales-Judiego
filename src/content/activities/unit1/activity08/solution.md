@@ -11,10 +11,10 @@ D;JGE
 @7
 M=1
 @END
-JMP
+0;JMP
 (IS_GREATER)
 @7
 M=0
 (END)
 @END
-JMP
+0;JMP
