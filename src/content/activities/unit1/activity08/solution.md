@@ -1,0 +1,16 @@
+@5
+D=M
+@10
+D=D-A
+@IS_GREATER
+D;JGE
+@7
+M=1
+@END
+JMP
+(IS_GREATER)
+@7
+M=0
+(END)
+@END
+JMP
