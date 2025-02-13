@@ -19,17 +19,16 @@ M=D
     @END
     D;JEQ
 
-    // Suma: R2 = R2 + R1
+
     @1
     D=M
     @2
     M=D+M
 
-    // Incrementa R1 (contador)
+
     @1
     M=M+1
 
-    // Regresa al inicio del ciclo
     @LOOP
     0;JMP
 
