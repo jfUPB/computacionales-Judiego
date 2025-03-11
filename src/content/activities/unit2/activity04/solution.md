@@ -1,3 +1,4 @@
+``` asm
 // a = 10
 @10
 D=A
@@ -16,3 +17,4 @@ A=M      // A = contenido de p, que es la dirección de a
 @20
 D=A      // D = 20
 M=D      // Se escribe 20 en la dirección apuntada por p (a)
+``` 
