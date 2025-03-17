@@ -13,7 +13,7 @@ Lectura de un “sensor” o entrada externa (la pantalla):
 Línea 5 y 6:
 Se carga la dirección 24576 (la base de la pantalla) y se lee su contenido a D.
 Resultado: D = RAM[24576].
-Aquí la “magia” es que el contenido de RAM[24576] determinará la rama a seguir.
+Aquí la magia es que el contenido de RAM[24576] determinará la rama a seguir.
 Salto condicional según el contenido leído:
 
 Línea 7 y 8:
