@@ -8,6 +8,7 @@ if (x > 0) {
 }
 
 #### ensamblador
+``` ASM
 @7
 D=A
 @x       // x en R16
@@ -35,13 +36,13 @@ D=A
 M=D
 
 (END_IF)
-
+``` 
 ### ciclo while
 int x = 2;
 while (x < 5) {
     x = x + 1;
 }
-
+``` ASM
 #### ensamblador
 @2
 D=A
@@ -62,7 +63,7 @@ M=M+1      // x = x + 1
 0;JMP
 
 (WHILE_END)
-
+``` 
 ### ciclo for
 int sum = 0;
 for (int i = 0; i < 10; i++) {
@@ -70,6 +71,7 @@ for (int i = 0; i < 10; i++) {
 }
 
 #### ensablador
+``` ASM
 @0
 D=A
 @i
@@ -99,7 +101,7 @@ M=M+1      // i = i + 1
 0;JMP
 
 (FOR_END)
-
+``` 
 ### punteros
 // Asigna 42 a la variable a a través de un puntero.
 int a = 5;
@@ -108,6 +110,7 @@ p = &a;
 *p = 42;
 
 #### ensamblador
+``` ASM
 @5
 D=A
 @a
@@ -123,7 +126,7 @@ A=M         // A apunta a la dirección almacenada en p (la dirección de a)
 @42
 D=A
 M=D         // *p = 42  --> a = 42
-
+``` 
 ### lectura de variables por punteros
 int a = 77;
 int *p;
@@ -132,6 +135,7 @@ p = &a;
 b = *p;
 
 #### ensablador
+``` ASM
 @77
 D=A
 @a
@@ -147,7 +151,7 @@ A=M         // A apunta a a
 D=M         // D = *p (valor de a)
 @b
 M=D         // b = *p
-
+``` 
 ### manipulacion de arreglo por punteros
 // Incrementa el primer elemento del arreglo arr en 1 a través de un puntero.
 int arr[3] = {10, 20, 30};
@@ -156,6 +160,7 @@ p = arr;       // p apunta a arr[0]
 *p = *p + 1;   // arr[0] = arr[0] + 1
 
 #### ensamblador
+``` ASM
 @10
 D=A
 @arr0
@@ -184,7 +189,7 @@ D=D+A      // D = arr[0] + 1
 @p
 A=M
 M=D        // arr[0] = arr[0] + 1
-
+``` 
 ### llamado de funciones con parametros
 int add(int a, int b) {
     return a + b;
@@ -192,6 +197,7 @@ int add(int a, int b) {
 int x = add(3, 4);
 
 #### ensamblador
+``` ASM
 // Preparar parámetros:
 @3
 D=A
@@ -220,7 +226,7 @@ M=D       // x = resultado (en R22, por ejemplo)
     D=D+M   // D = param0 + param1
     @return_add
     0;JMP
-
+``` 
 ### llama funcion con retorno de parametro
 // Función que multiplica dos enteros (usando suma repetida)
 int multiply(int a, int b) {
@@ -234,6 +240,7 @@ int multiply(int a, int b) {
 int y = multiply(2, 5);
 
 #### ensablador
+``` ASM
 // Preparar parámetros:
 @2
 D=A
@@ -289,3 +296,4 @@ M=D     // y en R24 = resultado (valor en D)
     D=M
     @return_mult
     0;JMP
+``` 
